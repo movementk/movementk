@@ -499,8 +499,7 @@ body {
   max-width: 100%;
   font-size: 12px;
   color: #333;
-  font-family: 'Noto Sans KR', sans-serif;
-  /*background-color: orange;*/ }
+  font-family: 'Noto Sans KR', sans-serif; }
 
 #header {
   position: fixed;
