@@ -1,0 +1,762 @@
+@import 'common';
+
+.sub {
+    background-color: #fff;
+    #footer {
+        background: none;
+    }
+}
+#content {
+    margin-top: 54px;
+    min-height: 600px;
+    padding-bottom: 70px;
+    @media(min-width: $md) {
+        margin-top: 86px;
+        padding-bottom: 50px;
+    }
+    @media(min-width: $md) {
+        
+    }
+}
+
+// 공통
+label {
+    font-weight: 400;
+    margin: 0;
+}
+button, .btn {
+    box-shadow: none !important;
+    background: none;
+    border-radius: 0;
+}
+.form-group {
+    margin: 0;
+    padding: 0;
+}
+.form-control {
+    height: 30px;
+    margin: 0;
+    color: #555;
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, .0);
+    background: none;
+    box-shadow: none !important;
+    &::placeholder {
+        color: #acacac;
+    }
+    &:-ms-input-placeholder {
+        color: #acacac;
+    }
+    &::-ms-input-placeholder {
+        color: #acacac;
+    }
+}
+.table {
+    table-layout: fixed;
+    margin: 0;
+    th,td {
+        padding: 5px 0;
+        vertical-align: middle;
+    }
+    .essential {
+        &:after {
+            color: #c7a07f;
+            content: " *";
+        }
+    }
+    .v-top {
+        padding-top: 13px;
+        vertical-align: top;
+    }
+}
+
+//page-header
+.page-header {
+    text-align: center;
+    padding: 60px 0 70px;
+    h2 {
+        position: relative;
+        top: 50px;
+        font-size: 40px;
+        color: #111;
+        letter-spacing: 1px;
+        font-weight: 200;
+        @include roboto();
+        opacity: 0;
+        @include transition($duration: .40s);
+    }
+    p {
+        position: relative;
+        top: 50px;
+        font-size: 13px;
+        line-height: 24px;
+        color: #111;
+        font-weight: 300;
+        margin-top: 40px;
+        word-break: keep-all;
+        opacity: 0;
+        @include transition($duration: .40s, $delay: .3s);
+    }
+    &.action {
+        h2 {
+            top: 0;
+            opacity: 1;
+        }
+        p {
+            top: 0;
+            opacity: 1;
+        }
+    }
+    @media(min-width: $md) {
+        padding: 110px 0;
+        h2 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 30px;
+        }
+    }
+    @media(min-width: $xl) {
+        padding: 130px 0 100px;
+    }
+}
+
+//portfolio 
+//list 
+.portfolio {
+    background-image: url(/assets/images/sub/bg_sub.gif);
+    .list {
+        .portfolio {
+            ul {
+                li {
+                    a {
+                        position: relative;
+                        top: 50px;
+                        opacity: 0;
+                        display: block;
+                        overflow: hidden;
+                        @include transition($duration: .30s);
+                        .details {
+                            .item-img {
+                                .img-fluid {
+                                    width: 100%;
+                                }
+                            }
+                            .summary {
+                                text-align: right;
+                                overflow: hidden;
+                                padding-top: 20px;
+                                h3 {
+                                    display: block;
+                                    font-size: 16px;
+                                    color: #111;
+                                    float: left;
+                                    font-weight: 400;
+                                    text-align: left;
+                                    small {
+                                        display: block;
+                                        font-size: 12px;
+                                        color: #666;
+                                        font-weight: 300;
+                                        margin-top: 10px;
+                                        @include roboto();
+                                    }
+                                }
+                                b {
+                                    width: 40px;
+                                    height: 20px;
+                                    font-size: 11px;
+                                    text-align: center;
+                                    line-height: 20px;
+                                    font-weight: bold;
+                                    display: inline-block;
+                                    border: 1px solid #666;
+                                    @include roboto();
+                                    margin-left: 3px;
+                                    &:first-child {
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                        &.on {
+                            opacity: 1;
+                            top: 0;
+                        }
+                    }
+                    & ~ li {
+                        a {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+            .more-works {
+                margin-top: 70px;
+                .move-more {
+                    > div {
+                        > a {
+                            position: relative;
+                            display: block;
+                            font-size: 18px;
+                            color: #111;
+                            font-weight: 300;
+                            margin: 0 auto;
+                            text-align: left;
+                            width: 101px;
+                            padding-bottom: 10px;
+                            @include roboto();
+                            @include transition();
+                            span {
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                width: 0;
+                                height: 1px;
+                                background-color: #111;
+                                @include transition($duration: .40s, $delay: .50s);
+                            }
+                            &:after {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                font-size: 20px;
+                                content: "+";
+                                opacity: 0;
+                                @include transition();
+                            }
+                            &.on {
+                                text-align: left;
+                                width: 170px;
+                                span {
+                                    width: 100%;
+                                    margin-left: -50%;
+                                }
+                                &:after {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media(min-width: $md) {
+            .page-header {
+                text-align: right;
+                padding: 80px 0 110px;
+                h2 {
+                    font-size: 50px;
+                }
+                p {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+            }
+            .portfolio {
+                margin-top: 0;
+                ul {
+                    li {
+                        a {
+                            .details {
+                                .item-img {
+                                    overflow: hidden;
+                                    .img-fluid {
+                                        @include transition($duration: .40s);
+                                        transform: scale(1);
+                                        -webkit-transform: scale(1);
+                                        -ms-transform: scale(1);
+                                        -moz-transform: scale(1);
+                                    }
+                                }
+                                .summary {
+                                    padding: 25px 20px;
+                                    h3 {
+                                        font-size: 18px;
+                                        small {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover {
+                                .details {
+                                    .item-img {
+                                        .img-fluid {
+                                            transform: scale(1.1);
+                                            -webkit-transform: scale(1.1);
+                                            -ms-transform: scale(1.1);
+                                            -moz-transform: scale(1.1);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & ~ li {
+                            a {
+                                margin-top: 25px;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            a {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+                .more-works {
+                    margin-top: 90px;
+                    .move-more {
+                        > div {
+                            > a {
+                                &:hover, &:focus {
+                                    &:after {
+                                        transform: rotate(180deg);
+                                        -webkit-transform: rotate(180deg);
+                                        -ms-transform: rotate(180deg);
+                                        -moz-transform: rotate(180deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media(min-width: $lg) {
+            .portfolio {
+                ul {
+                    li {
+                        a {
+                            .details {
+                                .summary {
+                                    height: 100px;
+                                    h3 {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        & ~ li {
+                            a {
+                                margin-top: 0;
+                            }
+                        }
+                        &:nth-of-type(3) ~ li {
+                            a {
+                                margin-top: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media(min-width: $xl) {
+            padding: 0 60px;
+            .portfolio {
+                padding: 0 30px;
+                ul {
+                    margin: 0 -30px;
+                    li {
+                        padding: 0 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//request 
+.request {
+    background-image: url(/assets/images/sub/bg_request_sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    .request-write {
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        .write-form {
+            padding-top: 54px;
+            padding-bottom: 90px;
+            h3 {
+                font-size: 16px;
+                color: #111;
+                font-weight: 400;
+                margin-bottom: 40px;
+                & ~ h3 {
+                    margin-top: 50px;
+                }
+            }
+            .table-wrap {
+                .table {
+                    tbody {
+                        tr {
+                            th {
+                                width: 100px;
+                                border: 0;
+                                font-size: 13px;
+                                font-weight: 400;
+                                border-bottom: 1px solid #dfdfdf;
+                            }
+                            td {
+                                font-size: 13px;
+                                font-weight: 400;
+                                border: 0;
+                                border-bottom: 1px solid #dfdfdf;
+                                .form-group {
+                                    .form-control {
+                                        font-size: 13px;
+                                        display: inline-block;
+                                        
+                                        
+                                        /*border: 1px solid #ccc;*/
+                                        
+                                        
+                                        
+                                        
+                                    }
+                                    textarea {
+                                        height: 100px;
+                                    }
+                                }
+                                .dropdown {
+                                    display: block;
+                                    button {
+                                        max-width: 100%;
+                                        width: 100%;
+                                        height: 30px;
+                                        text-align: left;
+                                        font-size: 13px;
+                                        color: #555;
+                                        border: 0;
+                                        padding: 0;
+                                        padding-left: 10px;
+                                        background: none !important;
+                                        box-shadow: none !important;
+                                        &:after {
+                                            float: right;
+                                            border: 0;
+                                            padding: 0;
+                                            margin: 0;
+                                            width: 13px;
+                                            height: 13px;
+                                            display: inline-block;
+                                            font-size: 13px;
+                                            font-family: "fontello";
+                                            content: "\E801";
+                                        }
+                                    }
+                                    &.show {
+                                        button {
+                                            &:after {
+                                                content: "\E802";
+                                            }
+                                        }
+                                        .dropdown-menu {
+                                            transform: translate3d(0px, 25px, 0px) !important;
+                                            margin: 0;
+                                            border: 0;
+                                            padding: 0;
+                                            max-width: 100%;
+                                            width: 100%;
+                                            a {
+                                                padding: 0;
+                                                font-size: 13px;
+                                                line-height: 30px;
+                                                padding-left: 10px;
+                                                border-bottom: 1px solid #dfdfdf;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.homepage, &.reference {
+                                    .form-group {
+                                        position: relative;
+                                        padding-left: 45px;
+                                        &:before {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            font-size: 13px;
+                                            color: #acacac;
+                                            line-height: 30px;
+                                            @include roboto();
+                                            content: "http://";
+                                        }
+                                    }
+                                }
+                                &.budget {
+                                    .form-group {
+                                        position: relative;
+                                        padding-right: 30px;
+                                        &:after {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            line-height: 30px;
+                                            font-size: 13px;
+                                            color: #acacac;
+                                            content: "만원";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-area {
+                margin-top: 70px;
+                p {
+                    .btn-send {
+                        position: relative;
+                        width: 150px;
+                        font-size: 18px;
+                        color: #111;
+                        text-align: left;
+                        @include roboto();
+                        padding: 5px 0;
+                        border-bottom: 1px solid #333;
+                        i {
+                            position: relative;
+                            font-style: normal;
+                            @include transition();
+                            width: 100%;
+                            display: block;
+                            z-index: 1;
+                            padding: 0 5px;
+                            &:after {
+                                position: absolute;
+                                top: 0;
+                                right: 5px;
+                                font-size: 15px;
+                                line-height: 27px;
+                                font-family: "fontello";
+                                content: "\F006";
+                            }
+                        }
+                        span {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 0;
+                            display: block;
+                            height: 100%;
+                            @include transition();
+                            opacity: 0;
+                            background-color: #333;
+                        }
+                        &:hover, &:focus {
+                            i {
+                                color: #fff;
+                            }
+                            span {
+                                width: 100%;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .backdrop {
+            display: none;
+        }
+    }
+    @media(min-width: $md) {
+        .request-write {
+            .write-form {
+                padding-top: 86px;
+                padding-bottom: 150px;
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 65px;
+                    & ~ h3 {
+                        margin-top: 100px;
+                    }
+                }
+                .table-wrap {
+                    .table {
+                        tbody {
+                            tr {
+                                th {
+                                    width: 160px;
+                                    font-size: 15px;
+                                    padding-top: 10px;
+                                    padding-bottom: 10px;
+                                }
+                                td {
+                                    font-size: 15px;
+                                    padding-top: 10px;
+                                    padding-bottom: 10px;
+                                    .form-group {
+                                        .form-control {
+                                            font-size: 14px;
+                                        }
+                                        textarea {
+                                            height: 140px;
+                                        }
+                                    }
+                                    .dropdown {
+                                        display: block;
+                                        button {
+                                            max-width: 170px;
+                                            width: 170px;
+                                            font-size: 14px;
+                                            padding-left: 0;
+                                            &:after {
+                                                width: 14px;
+                                                height: 14px;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                        &.show {
+                                            .dropdown-menu {
+                                                max-width: 170px;
+                                                a {
+                                                    padding-left: 0;
+                                                    font-size: 14px;
+                                                    line-height: 30px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.homepage, &.reference {
+                                        .form-group {
+                                            &:before {
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                    &.budget {
+                                        .form-group {
+                                            width: 170px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-area {
+                    margin-top: 130px;
+                }
+            }
+        }
+    }
+    @media(min-width: $xl) {
+        background: none;
+        .request-write {
+            display: table;
+            width: 100%;
+            .write-form {
+                padding-left: 45px;
+                display: table-cell;
+                width: 50%;
+                .page-header {
+                    text-align: right;
+                    padding-right: 6%;
+                }
+            }
+            .backdrop {
+                display: table-cell;
+                width: 50%;
+                height: 100%;
+                background-image: url(/assets/images/sub/bg_request_lg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 50%;
+            }
+        }
+    }
+}
+
+// partners
+.partners {
+    background-image: url(/assets/images/sub/bg_partners_sm.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    #footer {
+        background: none !important;
+    }
+    .partners-list {
+        > ul {
+            overflow: hidden;
+            > li {
+                float: left;
+                width: 33.33%;
+                figure {
+                    padding: 0 10px;
+                    .img-fluid {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+                &:nth-of-type(3) ~ li {
+                    figure {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: $md) {
+        .partners-list {
+            > ul {
+                > li {
+                    width: 25%;
+                    figure {
+                        padding: 0 15px;
+                    }
+                    &:nth-of-type(3) ~ li {
+                        figure {
+                            margin-top: 0px;
+                        }
+                    }
+                    &:nth-of-type(4) ~ li {
+                        figure {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: $xl) {
+        background-image: url(/assets/images/sub/bg_partners_lg.jpg);
+        .partners-list {
+            margin-top: 50px;
+            padding-bottom: 150px;
+            > ul {
+                > li {
+                    width: 12.5%;
+                    &:nth-of-type(4) ~ li {
+                        figure {
+                            margin-top: 0px;
+                        }
+                    }
+                    &:nth-of-type(8) ~ li {
+                        figure {
+                            margin-top: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

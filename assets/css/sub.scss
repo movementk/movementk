@@ -2,6 +2,10 @@
 
 .sub {
     background-color: #fff;
+    background-image: url(/assets/images/sub/bg_sub.gif);
+    #footer {
+        background: none;
+    }
 }
 #content {
     min-height: 600px;

@@ -23,6 +23,9 @@ address {
 figure {
   margin: 0; }
 
+button:hover, button:focus {
+  box-shadow: none; }
+
 a {
   color: #666; }
   a:hover, a:focus {
@@ -522,12 +525,13 @@ body {
   #header.active {
     background-color: rgba(255, 255, 255, 0.8); }
   #header .logo a img {
-    width: 150px;
+    width: 160px;
     display: block; }
   #header .project-inquiry {
     text-align: right; }
     #header .project-inquiry .p-txt {
       display: inline-block;
+      line-height: 24px;
       margin-right: 10px; }
       #header .project-inquiry .p-txt p {
         font-size: 13px;
@@ -539,6 +543,8 @@ body {
     #header .project-inquiry .btn-nav {
       display: inline-block;
       width: 24px;
+      height: 24px;
+      vertical-align: top;
       padding: 0;
       border: 0;
       border-radius: 0;
@@ -562,7 +568,8 @@ body {
           border-top: 1px solid #b4b4ad;
           border-bottom: 1px solid #000; }
         #header .project-inquiry .btn-nav .bar:nth-of-type(3) {
-          border-bottom: 1px solid #b4b4ad; }
+          border-top: 1px solid #b4b4ad;
+          border-bottom: 1px solid #000; }
     #header .project-inquiry .btn-close {
       position: relative;
       top: 1px;
@@ -731,7 +738,8 @@ body {
           display: inline-block;
           font-size: 30px;
           color: #111;
-          font-weight: 300; }
+          font-weight: 300;
+          letter-spacing: 2px; }
           #gnb-nav .gnb-list .menu-list > li > a > span {
             display: none; }
           #gnb-nav .gnb-list .menu-list > li > a:focus {
@@ -754,6 +762,7 @@ body {
         font-size: 16px;
         font-weight: 300;
         color: #111;
+        letter-spacing: 1px;
         line-height: 40px; }
         #gnb-nav .gnb-list .recruit > ul > li > a span {
           display: none; }
@@ -847,8 +856,10 @@ body {
       .opened #gnb-nav .gnb-list .recruit {
         top: 0;
         opacity: 1; }
-  .opened #header .p-txt {
-    display: none; }
+  .opened #header {
+    background: none !important; }
+    .opened #header .p-txt {
+      display: none; }
 
 #footer {
   font-family: 'Roboto', sans-serif;
@@ -868,15 +879,15 @@ body {
       #footer .company-info ul li:last-child {
         margin-right: 0; }
       #footer .company-info ul li dl dt {
-        font-weight: 600;
+        font-weight: 500;
         display: inline; }
       #footer .company-info ul li dl dd {
         display: inline;
-        font-weight: 400; }
+        font-weight: 300; }
         #footer .company-info ul li dl dd a {
           color: #111; }
   #footer .company-info .copyright {
-    font-weight: 400;
+    font-weight: 300;
     color: #111;
     line-height: 24px; }
   #footer .btn-area {

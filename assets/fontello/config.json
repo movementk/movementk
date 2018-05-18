@@ -11,6 +11,24 @@
       "css": "down",
       "code": 59392,
       "src": "mfglabs"
+    },
+    {
+      "uid": "e160a7e42e4e818463fd5a8607b9f608",
+      "css": "down-circle",
+      "code": 59393,
+      "src": "websymbols"
+    },
+    {
+      "uid": "a7e3ce91275bb77c0f4ec44a548b325c",
+      "css": "up-circle",
+      "code": 59394,
+      "src": "websymbols"
+    },
+    {
+      "uid": "37910a1398001a5ccb541cb2a253a2c7",
+      "css": "right-open",
+      "code": 61446,
+      "src": "mfglabs"
     }
   ]
 }

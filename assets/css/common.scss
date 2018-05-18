@@ -53,6 +53,12 @@ figure {
     margin: 0;
 }
 
+button {
+    &:hover, &:focus {
+        box-shadow: none;
+    }
+}
+
 a {
 	color: #666;
 	&:hover, &:focus {

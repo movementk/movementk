@@ -23,6 +23,9 @@ address {
 figure {
   margin: 0; }
 
+button:hover, button:focus {
+  box-shadow: none; }
+
 a {
   color: #666; }
   a:hover, a:focus {

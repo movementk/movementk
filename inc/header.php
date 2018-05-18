@@ -30,9 +30,9 @@
         <div class="container">
             <ul class="menu-list">
                 <li><a href="">About Us<span></span></a></li>
-                <li><a href="">Works<span></span></a></li>
-                <li><a href="">Partners<span></span></a></li>
-                <li><a href="">Request<span></span></a></li>
+                <li><a href="/portfolio/list.php">Works<span></span></a></li>
+                <li><a href="/partners/partners_list.php">Partners<span></span></a></li>
+                <li><a href="/request/request.php">Request<span></span></a></li>
                 <li><a href="">Contact<span></span></a></li>
             </ul>
             <div class="recruit">

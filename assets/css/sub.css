@@ -23,6 +23,9 @@ address {
 figure {
   margin: 0; }
 
+button:hover, button:focus {
+  box-shadow: none; }
+
 a {
   color: #666; }
   a:hover, a:focus {
@@ -494,7 +497,10 @@ a {
     min-width: 1200px; } }
 
 .sub {
-  background-color: #fff; }
+  background-color: #fff;
+  background-image: url(/assets/images/sub/bg_sub.gif); }
+  .sub #footer {
+    background: none; }
 
 #content {
   min-height: 600px; }

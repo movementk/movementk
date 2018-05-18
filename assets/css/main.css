@@ -23,6 +23,9 @@ address {
 figure {
   margin: 0; }
 
+button:hover, button:focus {
+  box-shadow: none; }
+
 a {
   color: #666; }
   a:hover, a:focus {
@@ -499,7 +502,7 @@ a {
   @media (min-width: 768px) {
     #content .jumbo-slider {
       height: 1025px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     #content .jumbo-slider {
       height: 880px; } }
   #content .jumbo-slider ul {
@@ -566,7 +569,8 @@ a {
       top: 50px;
       font-size: 40px;
       color: #111;
-      font-weight: 300;
+      letter-spacing: 1px;
+      font-weight: 200;
       -webkit-transition-property: all;
       transition-property: all;
       -webkit-transition-duration: 0.4s;
@@ -584,6 +588,7 @@ a {
       font-style: italic;
       line-height: 20px;
       margin-top: 40px;
+      font-weight: 300;
       letter-spacing: .5px;
       opacity: 0;
       -webkit-transition-property: all;
@@ -598,6 +603,8 @@ a {
       position: relative;
       top: 50px;
       width: 170px;
+      font-weight: 300;
+      letter-spacing: 1px;
       display: inline-block;
       padding-bottom: 10px;
       margin-top: 55px;
@@ -891,21 +898,51 @@ a {
     padding-bottom: 60px;
     text-align: center; }
     #introduce .section-header h3 {
+      position: relative;
+      top: 50px;
       font-size: 26px;
       color: #111;
       line-height: 42px;
-      font-weight: 300; }
+      opacity: 0;
+      font-weight: 200;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0.5s;
+      transition-delay: 0.5s; }
+    #introduce .section-header i {
+      font-style: normal;
+      font-weight: 200;
+      font-family: 'Roboto', sans-serif; }
     #introduce .section-header p {
+      position: relative;
+      top: 50px;
       font-size: 13px;
       color: #111;
       line-height: 28px;
       margin-top: 60px;
       font-weight: 300;
-      font-family: 'Noto Sans KR', sans-serif; }
-    #introduce .section-header i {
-      font-style: normal;
-      font-weight: 500;
-      font-family: 'Roboto', sans-serif; }
+      font-family: 'Noto Sans KR', sans-serif;
+      opacity: 0;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      -webkit-transition-timing-function: linear;
+      transition-timing-function: linear;
+      -webkit-transition-delay: 0.8s;
+      transition-delay: 0.8s; }
+      #introduce .section-header p i {
+        font-weight: 300; }
+    #introduce .section-header.on h3 {
+      top: 0;
+      opacity: 1; }
+    #introduce .section-header.on p {
+      top: 0;
+      opacity: 1; }
   #introduce .partners ul li figure {
     padding-bottom: 10px; }
     #introduce .partners ul li figure .img-fluid {

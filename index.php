@@ -11,9 +11,6 @@
         <article class="jumbo-slider">
             <ul class="slick-slider">
                 <li class="first"></li>
-                <!--<li class="second"></li>
-                <li class="third"></li>
-                <li class="fourth"></li>-->
             </ul>
             <div class="jumbo-intro">
                 <div class="details">
