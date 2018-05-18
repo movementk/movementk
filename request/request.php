@@ -110,7 +110,7 @@
                                     </tr>
                                     <tr>
                                         <th><label for="attach">파일 업로드</label></th>
-                                        <td>
+                                        <td class="file">
                                             <div class="form-group">
                                                 <input type="file" id="attach" class="form-control">
                                             </div>
@@ -136,5 +136,20 @@
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docfoot.php'); ?>
     <script src="/assets/js/pageheader.js"></script>
+    <script>
+        $(function(){
+            // portfolio 관련
+            $("#attach").attr('title',' ');
+            $(window).on('scroll load', function() {
+                setInterval(function(){
+                    $('.write').each(function(index, elem) {
+                        if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
+                            $(elem).addClass('on');
+                        }
+                    });
+                }, 2000);
+            });
+        });
+    </script>
 </body>
 </html>

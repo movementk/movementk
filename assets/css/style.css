@@ -552,6 +552,17 @@ button, .btn {
     padding-top: 13px;
     vertical-align: top; }
 
+/*   파일 업로드 스타일 수정하기                                         
+input[type="file"] {
+    color: transparent;
+    background-color: transparent;
+}
+
+.file {
+    .form-group {
+    }
+}
+*/
 .page-header {
   text-align: center;
   padding: 60px 0 70px; }
@@ -799,6 +810,21 @@ button, .btn {
     .request .request-write .write-form {
       padding-top: 54px;
       padding-bottom: 90px; }
+      .request .request-write .write-form .write {
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        position: relative;
+        top: 50px;
+        opacity: 0; }
+        .request .request-write .write-form .write.on {
+          top: 0;
+          opacity: 1; }
       .request .request-write .write-form h3 {
         font-size: 16px;
         color: #111;
@@ -851,7 +877,7 @@ button, .btn {
           .request .request-write .write-form .table-wrap .table tbody tr td .dropdown.show button:after {
             content: "\E802"; }
           .request .request-write .write-form .table-wrap .table tbody tr td .dropdown.show .dropdown-menu {
-            transform: translate3d(0px, 25px, 0px) !important;
+            transform: translate3d(0px, 30px, 0px) !important;
             margin: 0;
             border: 0;
             padding: 0;
@@ -860,6 +886,7 @@ button, .btn {
             .request .request-write .write-form .table-wrap .table tbody tr td .dropdown.show .dropdown-menu a {
               padding: 0;
               font-size: 13px;
+              color: #555;
               line-height: 30px;
               padding-left: 10px;
               border-bottom: 1px solid #dfdfdf; }
@@ -982,7 +1009,7 @@ button, .btn {
             .request .request-write .write-form .table-wrap .table tbody tr td .dropdown.show .dropdown-menu a {
               padding-left: 0;
               font-size: 14px;
-              line-height: 30px; }
+              line-height: 36px; }
         .request .request-write .write-form .table-wrap .table tbody tr td.homepage .form-group:before, .request .request-write .write-form .table-wrap .table tbody tr td.reference .form-group:before {
           font-size: 14px; }
         .request .request-write .write-form .table-wrap .table tbody tr td.budget .form-group {
@@ -1018,18 +1045,33 @@ button, .btn {
   background-size: cover; }
   .partners #footer {
     background: none !important; }
-  .partners .partners-list > ul {
-    overflow: hidden; }
-    .partners .partners-list > ul > li {
-      float: left;
-      width: 33.33%; }
-      .partners .partners-list > ul > li figure {
-        padding: 0 10px; }
-        .partners .partners-list > ul > li figure .img-fluid {
-          display: block;
-          margin: 0 auto; }
-      .partners .partners-list > ul > li:nth-of-type(3) ~ li figure {
-        margin-top: 15px; }
+  .partners .partners-list {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    opacity: 0;
+    position: relative;
+    top: 50px; }
+    .partners .partners-list.on {
+      top: 0;
+      opacity: 1; }
+    .partners .partners-list > ul {
+      overflow: hidden; }
+      .partners .partners-list > ul > li {
+        float: left;
+        width: 33.33%; }
+        .partners .partners-list > ul > li figure {
+          padding: 0 10px; }
+          .partners .partners-list > ul > li figure .img-fluid {
+            display: block;
+            margin: 0 auto; }
+        .partners .partners-list > ul > li:nth-of-type(3) ~ li figure {
+          margin-top: 15px; }
   @media (min-width: 768px) {
     .partners .partners-list > ul > li {
       width: 25%; }
