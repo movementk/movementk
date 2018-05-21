@@ -9,7 +9,7 @@
             </div>
             <div class="col-6">
                 <div class="project-inquiry">
-                    <a href="#" class="p-txt">
+                    <a href="/request/request.php" class="p-txt">
                         <p>프로젝트 문의</p>
                         <span></span>
                     </a>
@@ -29,11 +29,11 @@
     <div class="gnb-list">
         <div class="container">
             <ul class="menu-list">
-                <li><a href="">About Us<span></span></a></li>
+                <li><a href="/about/introduction.php">About Us<span></span></a></li>
                 <li><a href="/portfolio/list.php">Works<span></span></a></li>
                 <li><a href="/partners/partners_list.php">Partners<span></span></a></li>
                 <li><a href="/request/request.php">Request<span></span></a></li>
-                <li><a href="">Contact<span></span></a></li>
+                <li><a href="/contact/location.php">Contact<span></span></a></li>
             </ul>
             <div class="recruit">
                 <ul>
