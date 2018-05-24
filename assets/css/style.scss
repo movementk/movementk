@@ -439,7 +439,7 @@ input[type="file"] {
                                     }
                                     a {
                                         display: inline-block;
-                                        color: #fff;
+                                        color: inherit;
                                         text-decoration: none !important;
                                     }
                                 }
@@ -1308,7 +1308,7 @@ input[type="file"] {
             .section-content {
                 .container-fluid {
                     ul {
-                        margin: 0 -15px !important;
+                        margin: 0 -20px !important;
                         li {
                             padding: 0 !important;
                             .details {
@@ -1333,6 +1333,7 @@ input[type="file"] {
             .section-content {
                 .container-fluid {
                     ul {
+                        margin: 0 -15px !important;
                         li {
                             .details {
                                 padding: 100px 0 105px;

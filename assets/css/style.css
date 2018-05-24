@@ -702,7 +702,7 @@ input[type="file"] {
             font-family: 'Noto Sans KR', sans-serif; }
           .portfolio .view .view-intro .page-info .details .table-box .v-align dl dd a {
             display: inline-block;
-            color: #fff;
+            color: inherit;
             text-decoration: none !important; }
     .portfolio .view .details-page {
       padding: 50px 0;
@@ -1318,7 +1318,7 @@ input[type="file"] {
     padding-top: 180px;
     background-image: url(/assets/images/sub/bg_introduction_lg.jpg); }
   .about .introduce .section-content .container-fluid ul {
-    margin: 0 -15px !important; }
+    margin: 0 -20px !important; }
     .about .introduce .section-content .container-fluid ul li {
       padding: 0 !important; }
       .about .introduce .section-content .container-fluid ul li .details {
@@ -1331,8 +1331,10 @@ input[type="file"] {
           line-height: 30px;
           padding: 0; } }
 @media (min-width: 1200px) {
-  .about .introduce .section-content .container-fluid ul li .details {
-    padding: 100px 0 105px; } }
+  .about .introduce .section-content .container-fluid ul {
+    margin: 0 -15px !important; }
+    .about .introduce .section-content .container-fluid ul li .details {
+      padding: 100px 0 105px; } }
 @media (min-width: 1600px) {
   .about .introduce .section-content .container-fluid ul li .details p br.d-14-none {
     display: none !important; } }
