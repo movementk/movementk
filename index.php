@@ -21,7 +21,7 @@
                         the most creative and advanced group.
                     </p>
                     <div class="btn-down">
-                        <a href="#">Company Brochure</a>
+                        <a href="/about/introduction.php">Company Brochure</a>
                         <span></span>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                             <img src="/assets/images/main/img_more.jpg" class="img-fluid d-none d-lg-block" alt="">
                             <div class="move-more">
                                 <div>
-                                    <a href="#">
+                                    <a href="/portfolio/list.php">
                                         More Works
                                         <span></span>
                                     </a>

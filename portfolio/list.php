@@ -19,8 +19,8 @@
         <div class="container-fluid">
             <article class="portfolio">
                 <ul class="row">
-                    <li class="item col-12 col-md-6 col-lg-4">
-                        <a href="#">
+                    <li class="first-content item col-12 col-md-6 col-lg-4">
+                        <a href="/portfolio/view.php">
                             <div class="details">
                                 <div class="item-img">
                                     <img src="/assets/images/main/img_portfolio01.jpg" class="img-fluid" alt="">
@@ -35,7 +35,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="item col-12 col-md-6 col-lg-4">
+                    <li class="first-content item col-12 col-md-6 col-lg-4">
                         <a href="#">
                             <div class="details">
                                 <div class="item-img">
@@ -51,7 +51,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="item col-12 col-md-6 col-lg-4">
+                    <li class="first-content item col-12 col-md-6 col-lg-4">
                         <a href="#">
                             <div class="details">
                                 <div class="item-img">
@@ -186,15 +186,18 @@
     <script src="/assets/js/pageheader.js"></script>
     <script>
         $(function(){
-            // portfolio 관련
-            $(window).on('scroll load', function() {
+            $(document).ready(function(){
                 setInterval(function(){
-                    $('.item a').each(function(index, elem) {
-                        if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
-                            $(elem).addClass('on');
-                        }
-                    });
+                    $(".first-content a").addClass("on");
                 }, 2000);
+            });
+            // portfolio 관련
+            $(window).on('scroll', function() {
+                $('.item a').each(function(index, elem) {
+                    if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
+                        $(elem).addClass('on');
+                    }
+                });
             });
         });
     </script>

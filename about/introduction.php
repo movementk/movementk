@@ -60,7 +60,7 @@
                 <div class="container-fluid">
                     <h2>Overview</h2>
                     <p>
-                        평범하고 진부한 디자인은 거부하고, 감각적이고 유연한 사고로 디자인 트랜드의 중심에서<br class="d-none d-md-block"> 크리에이티브한 제안을 지속하는데 노력을 게을리 하지 않겠습니다.<br class="d-none d-md-block"> Movement K GROUP은 고객과 고객의 고객까지 만족시키는.<br class="d-none d-md-block"> 창의적인 디자인, 감각적인 움직임을 약속합니다.
+                        평범하고 진부한 디자인은 거부하고, 감각적이고 유연한 사고로 디자인 트랜드의 중심에서 크리에이티브한 제안을 지속하는데 노력을 게을리 하지 않겠습니다.<br class="d-none d-md-block"> Movement K GROUP은 고객과 고객의 고객까지 만족시키는.<br class="d-none d-md-block"> 창의적인 디자인, 감각적인 움직임을 약속합니다.
                     </p>
                 </div>
             </div>
@@ -118,7 +118,7 @@
         <section class="organization">
             <div class="section-header">
                 <div class="container-fluid">
-                    <h2>organization</h2>
+                    <h2>Organization</h2>
                     <p>
                        디자인은 스마트폰, 패션소품에서부터 도시설계, 정부정책에 이르기까지 일상에서 분리될 수 없는<br class="d-none d-md-block"> 핵심적인 개념으로 자리 잡았습니다.<br class="d-none d-md-block"> Movement K ROUP은 확고한 가치관과 축적된 경험을 바탕으로, 다양한 디자인 분야에서<br class="d-none d-md-block"> 중심적인 역할을 하는데 최선을 다하겠습니다.
                     </p>
@@ -175,14 +175,9 @@
     <script src="/assets/js/pageheader.js"></script>
     <script>
         $(function(){
-            // portfolio 관련
-            $(window).on('scroll load', function() {
+            $(document).ready(function(){
                 setInterval(function(){
-                    $('.section-header, .section-content').each(function(index, elem) {
-                        if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
-                            $(elem).addClass('on');
-                        }
-                    });
+                    $(".section-header, .section-content").addClass("on");
                 }, 2000);
             });
         });

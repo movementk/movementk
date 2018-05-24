@@ -228,14 +228,9 @@
     <script src="/assets/js/pageheader.js"></script>
     <script>
         $(function(){
-            // portfolio 관련
-            $(window).on('scroll load', function() {
+            $(document).ready(function(){
                 setInterval(function(){
-                    $('.partners-list').each(function(index, elem) {
-                        if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
-                            $(elem).addClass('on');
-                        }
-                    });
+                    $(".partners-list").addClass("on");
                 }, 2000);
             });
         });

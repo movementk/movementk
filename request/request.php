@@ -121,10 +121,7 @@
                         </div>
                         <div class="btn-area">
                             <p>
-                                <button type="submit" class="btn btn-send">
-                                    <i>Send</i>
-                                    <span></span>
-                                </button>
+                                <button type="submit" class="btn btn-send">Send</button>
                             </p>
                         </div>
                     </form>
@@ -138,15 +135,9 @@
     <script src="/assets/js/pageheader.js"></script>
     <script>
         $(function(){
-            // portfolio 관련
-            $("#attach").attr('title',' ');
-            $(window).on('scroll load', function() {
+            $(document).ready(function(){
                 setInterval(function(){
-                    $('.write').each(function(index, elem) {
-                        if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
-                            $(elem).addClass('on');
-                        }
-                    });
+                    $(".write").addClass("on");
                 }, 2000);
             });
         });

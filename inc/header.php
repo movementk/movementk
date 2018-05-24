@@ -38,7 +38,7 @@
             <div class="recruit">
                 <ul>
                     <li><a href="#">Recruit<span></span></a></li>
-                    <li><a href="#">Company Brochure<span></span></a></li>
+                    <li><a href="/about/introduction.php">Company Brochure<span></span></a></li>
                 </ul>
             </div>
         </div>

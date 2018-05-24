@@ -35,7 +35,7 @@
             </div>
             <div class="d-none d-md-block col-md-4">
                 <div class="btn-area">
-                    <a href="#" class="btn btn-brochure" role="button">
+                    <a href="/about/introduction.php" class="btn btn-brochure" role="button">
                         <p>Company Brochure</p>
                         <span></span>
                     </a>
