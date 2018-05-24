@@ -38,7 +38,7 @@
             <div class="recruit">
                 <ul>
                     <li><a href="#">Recruit<span></span></a></li>
-                    <li><a href="/about/introduction.php">Company Brochure<span></span></a></li>
+                    <li><a href="/assets/document_down/Movement_K_Group_Brochure_2017.pdf" target="_blank">Company Brochure<span></span></a></li>
                 </ul>
             </div>
         </div>

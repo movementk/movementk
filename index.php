@@ -21,7 +21,7 @@
                         the most creative and advanced group.
                     </p>
                     <div class="btn-down">
-                        <a href="/about/introduction.php">Company Brochure</a>
+                        <a href="/assets/document_down/Movement_K_Group_Brochure_2017.pdf" target="_blank">Company Brochure</a>
                         <span></span>
                     </div>
                 </div>

@@ -1232,6 +1232,9 @@ input[type="file"] {
             background-repeat: no-repeat;
             background-position: 50% 50%;
             background-size: cover;
+            h2 {
+                color: #777 !important;
+            }
         }
         .section-content {
             .container-fluid {
@@ -1261,6 +1264,7 @@ input[type="file"] {
                                 margin-top: 10px;
                                 font-size: 14px;
                                 color: #555;
+                                letter-spacing: 1px;
                                 @include roboto();
                             }
                             hr {

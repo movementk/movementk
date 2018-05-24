@@ -136,7 +136,7 @@
     <script>
         $(function(){
             $(document).ready(function(){
-                setInterval(function(){
+                setTimeout(function(){
                     $(".write").addClass("on");
                 }, 2000);
             });

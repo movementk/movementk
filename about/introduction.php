@@ -174,10 +174,19 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="/assets/js/pageheader.js"></script>
     <script>
-        $(function(){
+        /*$(function(){
             $(document).ready(function(){
                 setInterval(function(){
                     $(".section-header, .section-content").addClass("on");
+                }, 2000);
+            });
+        });*/
+        $(window).on('scroll load', function() {
+            $('.section-header, .section-content').each(function(index, elem) {
+                setTimeout(function(){
+                    if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
+                        $(elem).addClass('on');
+                    }
                 }, 2000);
             });
         });

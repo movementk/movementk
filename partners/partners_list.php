@@ -229,7 +229,7 @@
     <script>
         $(function(){
             $(document).ready(function(){
-                setInterval(function(){
+                setTimeout(function(){
                     $(".partners-list").addClass("on");
                 }, 2000);
             });
