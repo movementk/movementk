@@ -799,11 +799,26 @@ a {
     #introduce .section-header.on p {
       top: 0;
       opacity: 1; }
-  #introduce .partners ul li figure {
-    padding-bottom: 10px; }
-    #introduce .partners ul li figure .img-fluid {
-      margin: 0 auto;
-      display: block; }
+  #introduce .partners {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s; }
+    #introduce .partners ul li figure {
+      padding-bottom: 10px; }
+      #introduce .partners ul li figure .img-fluid {
+        margin: 0 auto;
+        display: block; }
+    #introduce .partners.on {
+      top: 0;
+      opacity: 1; }
   @media (min-width: 768px) {
     #introduce {
       padding: 145px 0 155px; }

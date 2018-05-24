@@ -24,7 +24,7 @@ $(function(){
 
     // portfolio 관련
     $(window).on('scroll', function() {
-        $('.item a, #introduce .section-header').each(function(index, elem) {
+        $('.item a, #introduce .section-header, .partners').each(function(index, elem) {
             if ($(window).scrollTop() > $(elem).offset().top - ($(window).height() / 1.3)) {
                 $(elem).addClass('on');
             }

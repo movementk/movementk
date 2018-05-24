@@ -497,6 +497,10 @@
         }
     }
     .partners {
+        position: relative;
+        top: 50px;
+        opacity: 0;
+        @include transition($duration: .40s);
         ul {
             li {
                 figure {
@@ -507,6 +511,10 @@
                     }
                 }
             }
+        }
+        &.on {
+            top: 0;
+            opacity: 1;
         }
     }
     @media(min-width: $md) {
