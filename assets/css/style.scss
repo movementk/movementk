@@ -397,15 +397,19 @@ input[type="file"] {
                     .table-box {
                         .v-align {
                             .kind {
+                                display: inline-block;
                                 font-size: 11px;
                                 width: 40px;
                                 line-height: 18px;
                                 height: 20px;
                                 text-align: center;
                                 font-weight: bold;
-                                display: block;
                                 @include roboto();
                                 border: 1px solid #fff;
+                                margin-right: 8px;
+                                &:lsat-child {
+                                    margin-right: 0;
+                                }
                             }
                             h2 {
                                 font-size: 20px;

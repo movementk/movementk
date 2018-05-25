@@ -19,35 +19,11 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
-                &.first {
-                    background-image: url(/assets/images/main/bg_md_slider01.jpg);
-                }
-                /*&.second {
-                    background-image: url(/assets/images/main/bg_md_slider02.jpg);
-                }
-                &.third {
-                    background-image: url(/assets/images/main/bg_md_slider03.jpg);
-                }
-                &.fourth {
-                    background-image: url(/assets/images/main/bg_md_slider04.jpg);
-                }*/
                 @media(min-width: $md) {
                     height: 1025px;
                 }
                 @media(min-width: $lg) {
                     height: 880px;
-                    &.first {
-                        background-image: url(/assets/images/main/bg_lg_slider01.jpg);
-                    }
-                    /*&.second {
-                        background-image: url(/assets/images/main/bg_lg_slider02.jpg);
-                    }
-                    &.third {
-                        background-image: url(/assets/images/main/bg_lg_slider03.jpg);
-                    }
-                    &.fourth {
-                        background-image: url(/assets/images/main/bg_lg_slider04.jpg);
-                    }*/
                 }
             }
         }

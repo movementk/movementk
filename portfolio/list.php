@@ -68,7 +68,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="item col-12 col-md-6 col-lg-4 d-none d-md-block">
+					<li class="item col-12 col-md-6 col-lg-4">
 						<a href="#">
 							<div class="details">
 								<div class="item-img">
@@ -84,7 +84,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="item col-12 col-md-6 col-lg-4 d-none d-lg-block">
+					<li class="item col-12 col-md-6 col-lg-4">
 						<a href="#">
 							<div class="details">
 								<div class="item-img">
@@ -100,7 +100,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="item col-12 col-md-6 col-lg-4 d-none d-lg-block">
+					<li class="item col-12 col-md-6 col-lg-4">
 						<a href="#">
 							<div class="details">
 								<div class="item-img">
@@ -113,54 +113,6 @@
 									</h3>
 									<b>W</b>
 									<b>M</b>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="item col-12 col-md-6 col-lg-4 d-none d-lg-block">
-						<a href="#">
-							<div class="details">
-								<div class="item-img">
-									<img src="/assets/images/main/img_portfolio07.jpg" class="img-fluid" alt="">
-								</div>
-								<div class="summary">
-									<h3>
-										폴휴먼
-										<small>Paul Human</small>
-									</h3>
-									<b>RW</b>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="item col-12 col-md-6 col-lg-4 d-none d-lg-block">
-						<a href="#">
-							<div class="details">
-								<div class="item-img">
-										<img src="/assets/images/main/img_portfolio05.jpg" class="img-fluid" alt="">
-								</div>
-								<div class="summary">
-									<h3>
-										화이트타이거즈
-										<small>White Tigers</small>
-									</h3>
-									<b>RW</b>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="item col-12 col-md-6 col-lg-4 d-none d-lg-block">
-						<a href="#">
-							<div class="details">
-								<div class="item-img">
-									<img src="/assets/images/main/img_portfolio04.jpg" class="img-fluid" alt="">
-								</div>
-								<div class="summary">
-									<h3>
-										후로후시
-										<small>flowfushi</small>
-									</h3>
-									<b>RW</b>
 								</div>
 							</div>
 						</a>

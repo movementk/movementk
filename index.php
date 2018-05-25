@@ -3,6 +3,34 @@
 <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
 <link rel="stylesheet" href="/assets/css/main.css">
 </head>
+<style>
+#content .jumbo-slider ul li.first {
+    background-image: url(/assets/images/main/bg_md_slider01.jpg); 
+}
+#content .jumbo-slider ul li.second {
+    background-image: url(/assets/images/main/bg_md_slider02.jpg); 
+}
+#content .jumbo-slider ul li.third {
+    background-image: url(/assets/images/main/bg_md_slider03.jpg); 
+}
+#content .jumbo-slider ul li.fourth {
+    background-image: url(/assets/images/main/bg_md_slider04.jpg); 
+}
+@media (min-width: 992px) {
+    #content .jumbo-slider ul li.first {
+        background-image: url(/assets/images/main/bg_lg_slider01.jpg); 
+    }
+    #content .jumbo-slider ul li.second {
+        background-image: url(/assets/images/main/bg_lg_slider02.jpg); 
+    }
+    #content .jumbo-slider ul li.third {
+        background-image: url(/assets/images/main/bg_lg_slider03.jpg); 
+    }
+    #content .jumbo-slider ul li.fourth {
+        background-image: url(/assets/images/main/bg_lg_slider04.jpg); 
+    }
+}
+</style>
 <body class="">
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
 

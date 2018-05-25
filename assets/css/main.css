@@ -368,35 +368,13 @@ a {
       height: 570px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: 50% 50%;
-      /*&.second {
-          background-image: url(/assets/images/main/bg_md_slider02.jpg);
-      }
-      &.third {
-          background-image: url(/assets/images/main/bg_md_slider03.jpg);
-      }
-      &.fourth {
-          background-image: url(/assets/images/main/bg_md_slider04.jpg);
-      }*/ }
-      #content .jumbo-slider ul li.first {
-        background-image: url(/assets/images/main/bg_md_slider01.jpg); }
+      background-position: 50% 50%; }
       @media (min-width: 768px) {
         #content .jumbo-slider ul li {
           height: 1025px; } }
       @media (min-width: 992px) {
         #content .jumbo-slider ul li {
-          height: 880px;
-          /*&.second {
-              background-image: url(/assets/images/main/bg_lg_slider02.jpg);
-          }
-          &.third {
-              background-image: url(/assets/images/main/bg_lg_slider03.jpg);
-          }
-          &.fourth {
-              background-image: url(/assets/images/main/bg_lg_slider04.jpg);
-          }*/ }
-          #content .jumbo-slider ul li.first {
-            background-image: url(/assets/images/main/bg_lg_slider01.jpg); } }
+          height: 880px; } }
   #content .jumbo-slider .progressbar {
     position: absolute;
     bottom: 0;
