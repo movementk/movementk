@@ -76,9 +76,10 @@
                                         <td>
                                             <div class="dropdown">
                                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    신규 제작문의
+                                                    유형선택
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">신규 제작문의</a>
                                                     <a class="dropdown-item" href="#">리뉴얼 문의</a>
                                                 </div>
                                             </div>

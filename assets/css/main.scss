@@ -199,7 +199,7 @@
                             font-size: 16px;
                             color: #111;
                             float: left;
-                            font-weight: 400;
+                            font-weight: 300;
                             text-align: left;
                             small {
                                 display: block;
@@ -207,6 +207,7 @@
                                 color: #666;
                                 font-weight: 300;
                                 margin-top: 10px;
+                                letter-spacing: 1px;
                                 @include roboto();
                             }
                         }
@@ -216,6 +217,7 @@
                             font-size: 11px;
                             text-align: center;
                             line-height: 20px;
+                            color: #2b2b2b;
                             font-weight: bold;
                             display: inline-block;
                             border: 1px solid #666;
@@ -232,11 +234,11 @@
                     top: 0;
                 }
             }
-            & ~ li {
+            /*& ~ li {
                 a {
                     margin-top: 20px;
                 }
-            }
+            }*/
             .more-works {
                 padding: 70px 0;
                 .move-more {
@@ -331,7 +333,7 @@
                         }
                     }
                 }
-                & ~ li {
+                /*& ~ li {
                     a {
                         margin-top: 25px;
                     }
@@ -340,7 +342,7 @@
                     a {
                         margin-top: 0;
                     }
-                }
+                }*/
                 .more-works {
                     padding: 80px 0;
                     .move-more {
@@ -371,23 +373,19 @@
                     margin: 0 -15px;
                     .details {
                         .summary {
-                            height: 100px;
+                            /*height: 100px;*/
+                            padding: 30px 20px 40px;
                             h3 {
                                 font-size: 20px;
                             }
                         }
                     }
                 }
-                & ~ li {
+                /*& ~ li {
                     a {
                         margin-top: 0;
                     }
-                }
-                &:nth-of-type(4) ~ li {
-                    a {
-                        margin-top: 35px;
-                    }
-                }
+                }*/
                 .more-works {
                     padding: 0;
                     margin: 35px -15px 0;
