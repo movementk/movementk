@@ -1111,12 +1111,14 @@ input[type="file"] {
                             margin-bottom: 15px;
                         }
                         dd {
+                            color: #666;
+                            font-weight: 300;
                             font-size: 13px;
                             line-height: 20px;
                             address {
                                 display: block;
+                                font-weight: 300;
                                 &.ko {
-                                    font-weight: 300;
                                     @include noto();
                                 }
                                 & ~ address {
@@ -1124,7 +1126,8 @@ input[type="file"] {
                                 }
                             }
                             a {
-                                color: #111;
+                                color: #666;
+                                font-weight: 300;
                             }
                         }
                     }

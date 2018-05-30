@@ -1201,17 +1201,20 @@ input[type="file"] {
       font-weight: 600;
       margin-bottom: 15px; }
     .contact .location .information ul li dl dd {
+      color: #666;
+      font-weight: 300;
       font-size: 13px;
       line-height: 20px; }
       .contact .location .information ul li dl dd address {
-        display: block; }
+        display: block;
+        font-weight: 300; }
         .contact .location .information ul li dl dd address.ko {
-          font-weight: 300;
           font-family: 'Noto Sans KR', sans-serif; }
         .contact .location .information ul li dl dd address ~ address {
           margin-top: 15px; }
       .contact .location .information ul li dl dd a {
-        color: #111; }
+        color: #666;
+        font-weight: 300; }
 @media (min-width: 768px) {
   .contact .location .information {
     padding-top: 70px; }
