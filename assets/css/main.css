@@ -557,7 +557,7 @@ a {
       .portfolio ul li a .details .summary {
         text-align: right;
         overflow: hidden;
-        padding-top: 20px; }
+        padding: 20px 0; }
         .portfolio ul li a .details .summary h3 {
           display: block;
           font-size: 16px;
