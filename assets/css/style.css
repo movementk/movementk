@@ -408,17 +408,6 @@ button, .btn {
     padding-top: 13px;
     vertical-align: top; }
 
-/*   파일 업로드 스타일 수정하기                                         
-input[type="file"] {
-    color: transparent;
-    background-color: transparent;
-}
-
-.file {
-    .form-group {
-    }
-}
-*/
 .page-header {
   text-align: center;
   padding: 60px 0 70px; }
@@ -991,7 +980,7 @@ input[type="file"] {
           .request .request-write .write-form .table-wrap .table tbody tr td .dropdown.show button:after {
             content: "\E802"; }
           .request .request-write .write-form .table-wrap .table tbody tr td .dropdown.show .dropdown-menu {
-            transform: translate3d(0px, 30px, 0px) !important;
+            transform: translate3d(0px, 35px, 0px) !important;
             margin: 0;
             border: 0;
             padding: 0;
@@ -1001,9 +990,20 @@ input[type="file"] {
               padding: 0;
               font-size: 13px;
               color: #555;
-              line-height: 30px;
+              line-height: 36px;
               padding-left: 10px;
-              border-bottom: 1px solid #dfdfdf; }
+              background-color: #ededed;
+              -webkit-transition-property: all;
+              transition-property: all;
+              -webkit-transition-duration: 0.15s;
+              transition-duration: 0.15s;
+              -webkit-transition-timing-function: linear;
+              transition-timing-function: linear;
+              -webkit-transition-delay: 0s;
+              transition-delay: 0s; }
+              .request .request-write .write-form .table-wrap .table tbody tr td .dropdown.show .dropdown-menu a:hover, .request .request-write .write-form .table-wrap .table tbody tr td .dropdown.show .dropdown-menu a:focus {
+                color: #fff;
+                background-color: #988778; }
         .request .request-write .write-form .table-wrap .table tbody tr td.homepage .form-group, .request .request-write .write-form .table-wrap .table tbody tr td.reference .form-group {
           position: relative;
           padding-left: 45px; }
@@ -1027,6 +1027,40 @@ input[type="file"] {
             font-size: 13px;
             color: #acacac;
             content: "만원"; }
+        .request .request-write .write-form .table-wrap .table tbody tr td.file .form-group {
+          position: relative;
+          padding-right: 80px; }
+          .request .request-write .write-form .table-wrap .table tbody tr td.file .form-group .file {
+            width: 100%; }
+          .request .request-write .write-form .table-wrap .table tbody tr td.file .form-group .form-control {
+            background-color: #fff !important; }
+          .request .request-write .write-form .table-wrap .table tbody tr td.file .form-group input[type='button'] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 13px;
+            color: #333;
+            text-align: center;
+            width: 70px;
+            padding: 5px 0 4px;
+            border: 0;
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #dfdfdf;
+            -webkit-transition-property: all;
+            transition-property: all;
+            -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s; }
+            .request .request-write .write-form .table-wrap .table tbody tr td.file .form-group input[type='button']:hover, .request .request-write .write-form .table-wrap .table tbody tr td.file .form-group input[type='button']:focus {
+              color: #fff;
+              border-color: #333;
+              background-color: #333; }
+          .request .request-write .write-form .table-wrap .table tbody tr td.file .form-group input[type='file'] {
+            display: none !important; }
       .request .request-write .write-form .btn-area {
         margin-top: 70px; }
         .request .request-write .write-form .btn-area p .btn-send {
@@ -1086,24 +1120,30 @@ input[type="file"] {
         .request .request-write .write-form .table-wrap .table tbody tr td .dropdown {
           display: block; }
           .request .request-write .write-form .table-wrap .table tbody tr td .dropdown button {
-            max-width: 170px;
-            width: 170px;
+            max-width: 200px;
+            width: 200px;
             font-size: 14px;
-            padding-left: 0; }
+            padding-left: 10px; }
             .request .request-write .write-form .table-wrap .table tbody tr td .dropdown button:after {
               width: 14px;
               height: 14px;
               font-size: 14px; }
           .request .request-write .write-form .table-wrap .table tbody tr td .dropdown.show .dropdown-menu {
-            max-width: 170px; }
+            max-width: 200px; }
             .request .request-write .write-form .table-wrap .table tbody tr td .dropdown.show .dropdown-menu a {
-              padding-left: 0;
+              padding-left: 10px;
               font-size: 14px;
               line-height: 36px; }
         .request .request-write .write-form .table-wrap .table tbody tr td.homepage .form-group:before, .request .request-write .write-form .table-wrap .table tbody tr td.reference .form-group:before {
           font-size: 14px; }
         .request .request-write .write-form .table-wrap .table tbody tr td.budget .form-group {
           width: 170px; }
+        .request .request-write .write-form .table-wrap .table tbody tr td.file {
+          padding-right: 20px; }
+          .request .request-write .write-form .table-wrap .table tbody tr td.file .form-group {
+            padding-right: 110px; }
+            .request .request-write .write-form .table-wrap .table tbody tr td.file .form-group input[type='button'] {
+              width: 100px; }
       .request .request-write .write-form .btn-area {
         margin-top: 130px; } }
   @media (min-width: 1200px) {

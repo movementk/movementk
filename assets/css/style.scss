@@ -70,20 +70,6 @@ button, .btn {
     }
 }
 
-
-
-/*   파일 업로드 스타일 수정하기                                         
-input[type="file"] {
-    color: transparent;
-    background-color: transparent;
-}
-
-.file {
-    .form-group {
-    }
-}
-*/
-
 //page-header
 .page-header {
     text-align: center;
@@ -798,19 +784,24 @@ input[type="file"] {
                                             }
                                         }
                                         .dropdown-menu {
-                                            transform: translate3d(0px, 30px, 0px) !important;
+                                            transform: translate3d(0px, 35px, 0px) !important;
                                             margin: 0;
                                             border: 0;
                                             padding: 0;
                                             max-width: 100%;
-                                            width: 100%;
+                                            width: 100%; 
                                             a {
                                                 padding: 0;
                                                 font-size: 13px;
                                                 color: #555;
-                                                line-height: 30px;
+                                                line-height: 36px;
                                                 padding-left: 10px;
-                                                border-bottom: 1px solid #dfdfdf;
+                                                background-color: #ededed;
+                                                @include transition();
+                                                &:hover, &:focus {
+                                                    color: #fff;
+                                                    background-color: #988778;
+                                                }
                                             }
                                         }
                                     }
@@ -843,6 +834,41 @@ input[type="file"] {
                                             font-size: 13px;
                                             color: #acacac;
                                             content: "만원";
+                                        }
+                                    }
+                                }
+                                &.file {
+                                    .form-group {
+                                        position: relative;
+                                        padding-right: 80px;
+                                        .file {
+                                            width: 100%;
+                                        }
+                                        .form-control {
+                                            background-color: #fff !important;
+                                        }
+                                        input[type='button'] {
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            font-size: 13px;
+                                            color: #333;
+                                            text-align: center;
+                                            width: 70px;
+                                            padding: 5px 0 4px;
+                                            border: 0;
+                                            cursor: pointer;
+                                            background-color: #fff;
+                                            border: 1px solid #dfdfdf;
+                                            @include transition();
+                                            &:hover, &:focus {
+                                                color: #fff;
+                                                border-color: #333;
+                                                background-color: #333;
+                                            }
+                                        }
+                                        input[type='file'] {
+                                            display: none !important;
                                         }
                                     }
                                 }
@@ -926,10 +952,10 @@ input[type="file"] {
                                     .dropdown {
                                         display: block;
                                         button {
-                                            max-width: 170px;
-                                            width: 170px;
+                                            max-width: 200px;
+                                            width: 200px;
                                             font-size: 14px;
-                                            padding-left: 0;
+                                            padding-left: 10px;
                                             &:after {
                                                 width: 14px;
                                                 height: 14px;
@@ -938,9 +964,9 @@ input[type="file"] {
                                         }
                                         &.show {
                                             .dropdown-menu {
-                                                max-width: 170px;
+                                                max-width: 200px;
                                                 a {
-                                                    padding-left: 0;
+                                                    padding-left: 10px;
                                                     font-size: 14px;
                                                     line-height: 36px;
                                                 }
@@ -957,6 +983,15 @@ input[type="file"] {
                                     &.budget {
                                         .form-group {
                                             width: 170px;
+                                        }
+                                    }
+                                    &.file {
+                                        padding-right: 20px;
+                                        .form-group {
+                                            padding-right: 110px;
+                                            input[type='button'] {
+                                                width: 100px;
+                                            }
                                         }
                                     }
                                 }
