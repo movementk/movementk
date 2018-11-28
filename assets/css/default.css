@@ -751,14 +751,18 @@ body {
     text-align: right; }
     #footer .btn-area .btn-brochure {
       position: relative;
+      display: inline-block;
       text-align: center;
       padding: 0;
       border-radius: 0;
+      margin-right: 10px;
       display: inline-block;
       border: 1px solid #999; }
+      #footer .btn-area .btn-brochure:last-child {
+        margin-right: 0; }
       #footer .btn-area .btn-brochure p {
         position: relative;
-        width: 170px;
+        width: 120px;
         height: 40px;
         font-size: 12px;
         color: #111;
@@ -799,7 +803,7 @@ body {
         position: relative;
         font-size: 12px;
         color: #111;
-        width: 170px;
+        width: 120px;
         height: 40px;
         line-height: 38px;
         text-align: center;
@@ -816,6 +820,15 @@ body {
     #footer {
       padding-left: 15px;
       padding-right: 15px; }
+      #footer .btn-area .btn-brochure {
+        width: 170px; }
+        #footer .btn-area .btn-brochure p {
+          width: 170px; }
+        #footer .btn-area .btn-brochure:hover span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: #333; }
       #footer .company-info ul li:first-child {
         display: inline-block;
         margin-right: 15px; } }

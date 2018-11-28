@@ -418,14 +418,19 @@ body {
         text-align: right;
         .btn-brochure {
             position: relative;
+            display: inline-block;
             text-align: center;
             padding: 0;
             border-radius: 0;
+            margin-right: 10px;
             display: inline-block;
             border: 1px solid #999;
+            &:last-child {
+                margin-right: 0;
+            }
             p {
                 position: relative;
-                width: 170px;
+                width: 120px;
                 height: 40px;
                 font-size: 12px;
                 color: #111;
@@ -460,7 +465,7 @@ body {
                 position: relative;
                 font-size: 12px;
                 color: #111;
-                width: 170px;
+                width: 120px;
                 height: 40px;
                 line-height: 38px;
                 text-align: center;
@@ -482,6 +487,22 @@ body {
     @media(min-width: $lg) {
         padding-left: 15px;
         padding-right: 15px;
+        .btn-area {
+            .btn-brochure {
+                width: 170px;
+                p {
+                    width: 170px;
+                }
+                &:hover {
+                    span {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        color: #333;
+                    }
+                }
+            }
+        }
         .company-info {
             ul {
                 li {
