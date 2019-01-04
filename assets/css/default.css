@@ -381,7 +381,7 @@ body {
   #header.active {
     background-color: rgba(255, 255, 255, 0.8); }
   #header .logo a img {
-    width: 160px;
+    width: 91px;
     display: block; }
   #header .project-inquiry {
     text-align: right; }
@@ -461,7 +461,7 @@ body {
       height: 86px;
       padding: 20px 10px; }
       #header .logo a img {
-        width: 270px; }
+        width: 163px; }
       #header .project-inquiry .p-txt {
         position: relative;
         padding: 0 20px;
